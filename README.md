@@ -1,6 +1,6 @@
 # TamaPoke CYD
 
-![TamaPoke CYD 像素封面](docs/images/cover.png)
+![TamaPoke CYD 像素封面與小皮卡丘](docs/images/cover.png?v=2)
 
 把皮卡丘養在 **ESP32-2432S028 CYD 2.8 吋觸控板**上。滿版像素草地、四個照顧圖示、三款小遊戲；USB 供電，**4 MB Flash、無須 PSRAM 或 microSD**。
 
@@ -23,7 +23,7 @@
 | --- | --- | --- |
 | ![夜間草地與睡覺的皮卡丘](docs/cyd/screens/sleep.png) | ![四種需求的數值視窗](docs/cyd/screens/status.png) | ![沙包碎落與星星效果](docs/cyd/screens/training-break.png) |
 
-這些介面截圖由**與韌體相同的繪圖程式**產生，使用示例存檔，並非 LCD 攝影。來源與雜湊在 [provenance.json](docs/cyd/screens/provenance.json)。另保留 [0.2.0 裝置端像素擷取](evidence/cyd/device-frame-0.2.0.png)。封面為 AI 生成專案插畫。
+這些介面截圖由**與韌體相同的繪圖程式**產生，使用示例存檔，並非 LCD 攝影。來源與雜湊在 [provenance.json](docs/cyd/screens/provenance.json)。另保留 [0.2.0 裝置端像素擷取](evidence/cyd/device-frame-0.2.0.png)。封面以 AI 生成場景搭配既有像素角色合成，見 [封面來源](docs/images/COVER.md)。
 
 ## 安裝
 

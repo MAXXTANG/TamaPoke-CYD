@@ -1,0 +1,32 @@
+{
+  "method": "User-authorized direct composition of the existing native sprite; no generated character",
+  "base": "cover-landscape.png",
+  "base_sha256": "eda524caaa3aaa23b72e89674d336d46206266194fa0df26aeae718208a0b37e",
+  "sprite": "pikachu-idle.png",
+  "sprite_sha256": "1b0fa3ae3f8e69e0551db21d51dd3b8715a1b2d9b9e7f9eaaa7777a7b868bb43",
+  "sprite_source": "assets/p025.bin, first idle frame cropped to opaque bounds",
+  "sprite_native_pixels": [
+    19,
+    25
+  ],
+  "scale": 7,
+  "resampling": "nearest-neighbor",
+  "position": [
+    1036,
+    686
+  ],
+  "sprite_bounds": [
+    1036,
+    686,
+    1169,
+    861
+  ],
+  "cover_pixels": [
+    1672,
+    941
+  ],
+  "outside_sprite_pixels_unchanged": true,
+  "output_sha256": "f44d1b81e2791098650f3e4fb0c94b54397c31664b9af47f33ab344cf1ad0842",
+  "base_file_preserved": true,
+  "provenance": "Derived PNG is a composition; original generated cover and its original metadata are retained separately."
+}
