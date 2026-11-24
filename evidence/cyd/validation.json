@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-11-24T14:39:44.203970+00:00",
+  "version": "0.4.0-cyd",
+  "source_base_commit": "021e84688e47eae0d806cf0e38403b21772b2718",
+  "host_tests": {
+    "total": 182,
+    "assertions": 27884,
+    "passed": 182,
+    "failed": 0,
+    "sanitizers": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ],
+    "verified_version": "0.4.0-cyd"
+  },
+  "web_regression_tests": {
+    "passed": 23,
+    "failed": 0,
+    "verified_version": "0.1.0-cyd; unchanged web assets"
+  },
+  "builds": {
+    "cyd-st7789": {
+      "static_ram_bytes": 23132,
+      "app_bytes": 970192,
+      "flash_linked_bytes": 969833
+    },
+    "cyd-ili9341": {
+      "static_ram_bytes": 23132,
+      "app_bytes": 970288,
+      "flash_linked_bytes": 969929
+    }
+  },
+  "render_band_bytes": 15360,
+  "embedded_sprite_bytes": 618200,
+  "host_rendered_screens": 28,
+  "usb_ports_detected": [
+    "CH340 ESP32 4MB"
+  ],
+  "hardware": {
+    "identified": true,
+    "backed_up": true,
+    "flashed": true,
+    "boot_tested": true,
+    "touch_tested": true,
+    "touch_verified_by": "user confirmed improvement of both games on 0.4.0",
+    "power_cycle_save_tested": false,
+    "nvs_preserved_bytes": 20480,
+    "device_render_capture": false,
+    "short_runtime_seconds": 128.487
+  },
+  "remote_ci_run": false,
+  "latest_cyd_tests": {
+    "version": "0.4.0-cyd",
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "included_in_full_suite": true
+  },
+  "hardware_evidence": "hardware-0.4.0-2026-11-24.json",
+  "usb_console_and_capture_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "approved_design": {
+    "pixels_compared": 76800,
+    "different_pixels": 0
+  }
+}

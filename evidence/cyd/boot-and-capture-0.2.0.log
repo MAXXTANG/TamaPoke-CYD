@@ -1,0 +1,18 @@
+ets Jul 29 2019 12:21:46
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+TamaPoke 0.2.0-cyd cyd-st7789: ESP32 / 4MB / no PSRAM
+SPRITE species=25 shiny=0 flash_bytes=159043 copied_bytes=0
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=1 food=0 joy=0 energy=25 clean=0 heap=332044 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1 frame_us=63494 max_frame_us=63494 frames=1 uptime_ms=866
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=1 food=0 joy=0 energy=25 clean=0 heap=332044 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1 frame_us=63494 max_frame_us=63494 frames=1 uptime_ms=877
+offline: 5 min aplicados (nv.2)
+TIME 1795528826 valid=1
+DONE
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=0 joy=0 energy=20 clean=0 heap=332044 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=62926 max_frame_us=63494 frames=2 uptime_ms=978
+Saved evidence/cyd/device-frame-0.2.0.png; RGB565 SHA256 ee8d48541c52d02a13c0d564b3879201b5ec6605907ebb4cf03f3c07afc00c95

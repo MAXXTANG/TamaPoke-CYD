@@ -1,0 +1,94 @@
+{
+  "recorded_at": "2026-11-24T14:39:44.203970+00:00",
+  "version": "0.4.0-cyd",
+  "source_parent_commit": "4a1d047",
+  "scope": "star catching and strength training visual and gameplay improvements",
+  "identification": {
+    "usb_bridge": "CH340",
+    "chip": "ESP32-D0WD-V3",
+    "revision": "v3.1",
+    "flash_bytes": 4194304,
+    "variant": "cyd-st7789"
+  },
+  "installed_app_sha256": "ddf414d9c2cb31bfe7f88c1134ca502cdfdebf35ca13f071d51229d80abbb4ef",
+  "partition_sha256": "b4ede05dd62c982a3e6c3c5063e67fa36cfa1d289281f17803ba4ceefb616b94",
+  "flash_method": "app only at 0x10000; partition and NVS untouched",
+  "write_hash_verified": true,
+  "original_full_flash_backup_reverified": true,
+  "nvs": {
+    "bytes": 20480,
+    "before_after_identical": true,
+    "sha256": "74882abfd0b51cffe5f8173ce1536e3494b6429c1c06d3d32ff4c02fa1b49d35",
+    "scope": "before app update and after final app, before USB clock sync and care actions",
+    "raw_files_git_ignored": true
+  },
+  "initial_usb_status": {
+    "version": "0.4.0-cyd",
+    "variant": "cyd-st7789",
+    "species": 25,
+    "level": 2,
+    "food": 90,
+    "joy": 55,
+    "energy": 100,
+    "clean": 94,
+    "heap": 331956,
+    "largest": 114676,
+    "psram": 0,
+    "band_bytes": 15360,
+    "time_valid": 1,
+    "calibrated": 1,
+    "frame_us": 62408,
+    "max_frame_us": 62861,
+    "frames": 2,
+    "uptime_ms": 1031,
+    "page": 0,
+    "beat": 0,
+    "hits": 0,
+    "combo": 0,
+    "rhythm_running": 0,
+    "game_running": 0,
+    "game_score": 0
+  },
+  "runtime": {
+    "recorded_at": "2026-11-24T14:40:01.779551+00:00",
+    "scope": "live USB observations; no synthetic input or gameplay capture",
+    "duration_seconds": 128.487,
+    "heap_min_bytes": 331956,
+    "heap_max_bytes": 331956,
+    "largest_block_min_bytes": 114676,
+    "max_frame_us_observed": 66106,
+    "pages_observed": [
+      0,
+      2,
+      3,
+      4
+    ],
+    "game_results_observed": {},
+    "gameplay_samples": {
+      "3": {
+        "samples": 10,
+        "running_samples": 8,
+        "max_score_observed": 5
+      },
+      "4": {
+        "samples": 8,
+        "running_samples": 7,
+        "max_score_observed": 12
+      }
+    }
+  },
+  "manual_game_acceptance": {
+    "status": "passed",
+    "quote": "兩款的畫面與體驗都有改善",
+    "scope": "user confirmed visuals and experience of both games; scoring and award invariants separately tested on host"
+  },
+  "rhythm_regression": {
+    "user_accepted_previous_version": true,
+    "five_screenshot_files_identical_to_0_3_0": true,
+    "rhythm_logic_unchanged": true
+  },
+  "power_cycle_tested": false,
+  "long_soak_tested": false,
+  "ili9341_hardware_tested": false,
+  "remote_ci_run": false
+}

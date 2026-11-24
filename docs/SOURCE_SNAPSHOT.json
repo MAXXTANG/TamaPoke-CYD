@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/MAXXTANG/TamaPoke-Pikachu",
+  "commit": "93641b143c631b5f7bda7c1d41e6688cb95e99bf",
+  "branch": "feat/cyd-prototype",
+  "version": "0.4.0-cyd",
+  "export": "Tracked CYD sources, shared game core/tests, selected artwork, published firmware and evidence. No original Flash backups, credentials, previous Git history or unrelated Waveshare browser installer.",
+  "commit_was_local_at_export": true
+}

@@ -1,0 +1,33 @@
+ets Jul 29 2019 12:21:46
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+TamaPoke 0.2.0-cyd cyd-st7789: ESP32 / 4MB / no PSRAM
+SPRITE species=25 shiny=0 flash_bytes=159043 copied_bytes=0
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1 frame_us=63526 max_frame_us=63526 frames=1 uptime_ms=860
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1 frame_us=63526 max_frame_us=63526 frames=1 uptime_ms=871
+TIME 1795528883 valid=1
+DONE
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=62906 max_frame_us=63526 frames=2 uptime_ms=971
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=62906 max_frame_us=63526 frames=2 uptime_ms=995
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52074 max_frame_us=64269 frames=19 uptime_ms=3021
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52094 max_frame_us=64269 frames=36 uptime_ms=5049
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52155 max_frame_us=64269 frames=53 uptime_ms=7079
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52326 max_frame_us=64269 frames=70 uptime_ms=9120
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=53662 max_frame_us=64269 frames=87 uptime_ms=11161
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52342 max_frame_us=64269 frames=104 uptime_ms=13200
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52304 max_frame_us=64269 frames=121 uptime_ms=15240
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52362 max_frame_us=64269 frames=138 uptime_ms=17280
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52304 max_frame_us=64269 frames=155 uptime_ms=19320
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52322 max_frame_us=64269 frames=172 uptime_ms=21360
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52322 max_frame_us=64269 frames=189 uptime_ms=23400
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=95 joy=22 energy=20 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=52322 max_frame_us=64269 frames=206 uptime_ms=25440
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=90 joy=28 energy=8 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=51997 max_frame_us=64269 frames=223 uptime_ms=27479
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=90 joy=28 energy=8 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=62443 max_frame_us=64269 frames=240 uptime_ms=29530
+STATUS version=0.2.0-cyd variant=cyd-st7789 species=25 level=2 food=90 joy=28 energy=8 clean=0 heap=331900 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1 frame_us=62723 max_frame_us=64541 frames=257 uptime_ms=31570
+{"recorded_at": "2026-11-24T14:01:53.772696+00:00", "scope": "short live USB run, not long-term soak or physical power cycle", "duration_seconds": 30.575, "heap_min_bytes": 331900, "heap_max_bytes": 331900, "largest_block_min_bytes": 114676, "frame_us_min": 51997, "frame_us_max": 62906, "max_frame_us_observed": 64541, "observed_render_fps": 8.340147179067866}

@@ -1,0 +1,166 @@
+{
+  "kind": "host-rendered firmware UI examples, not physical LCD photos",
+  "sample_save": true,
+  "resolution": [
+    320,
+    240
+  ],
+  "screens": [
+    "home",
+    "food",
+    "games",
+    "catch",
+    "training",
+    "result",
+    "info",
+    "settings",
+    "dex",
+    "confirm",
+    "sleep",
+    "shiny",
+    "raichu",
+    "egg",
+    "status",
+    "rhythm-ready",
+    "rhythm-wait",
+    "rhythm-cue",
+    "rhythm-perfect",
+    "rhythm-result",
+    "catch-falling",
+    "catch-collected",
+    "catch-missed",
+    "catch-result",
+    "training-charge",
+    "training-punch",
+    "training-break",
+    "training-result"
+  ],
+  "command": "python3 tools/render_cyd.py",
+  "source_sha256": {
+    "cyd/include/ui.h": "497df58016c541cf1e2ad498f8d50212e8ce3a59e18569bc7daefd7aea5f5f83",
+    "cyd/include/pixel_art.h": "7a5e089524bfbc483747615913d371ec15bfcb31e3fe78a65ac12f0f53c5bcf7",
+    "cyd/include/model.h": "df9c0e65f94d1346b6d071feb9312a8203025cc751ec5e507213a2f6df876a03",
+    "cyd/include/rhythm.h": "f885b2f4d86296f95f253a701d00e35ddd806d3cd4e0257cc67bf47cae01bafd",
+    "cyd/include/games.h": "86269042a1b73b20f00d713cb4836c239853b8ba142f0367093b4b31ba64fbc6",
+    "cyd/include/sprite.h": "f7fad4fd859479f659c91e1ddc1a1e33b9eb30642a6d3299fba7a4e8284836b6",
+    "cyd/include/version.h": "4ce3d94fdbc1010c682e20dc82535ce6b458b48dd2f0fee104254705423b1479",
+    "cyd/test/host_canvas.h": "62072cc1ff3cd29a59050b37c9955110cf8e10c958a10a897f2e970869500f23",
+    "cyd/test/render.cpp": "4406ed200e1ed8623fe668f42e23a3669007c670d9f6f04d9c3fa233dfca8fa2",
+    "TamaPoke/embedded_mon.cpp": "f42521ce74e0642c0447927f031f8cb1d3f05f5b77d52060a09a86bcb99a4e7a",
+    "TamaPoke/species.h": "5eac3ba6a80967284a4f9abcffa731f1b1ecdd55bafd0982f2533638971392fe"
+  },
+  "images": [
+    {
+      "file": "home.png",
+      "sha256": "8dbd71b6c59c2d2d71a2817a73fcb6670e1d80647901425a19fdbe7117db8393"
+    },
+    {
+      "file": "food.png",
+      "sha256": "0aa4e89c6b9067c923dbf9282f89d27113ded22369f74ae03e16da10a2db0253"
+    },
+    {
+      "file": "games.png",
+      "sha256": "ebb8694be134fcc3e4e99c4b565ab45a6c74f0f572006c619003b703590514fd"
+    },
+    {
+      "file": "catch.png",
+      "sha256": "450a6ca86a404a20450670a2ab8cb7674ae5db8bf66f2ca1a9500d90ce078b08"
+    },
+    {
+      "file": "training.png",
+      "sha256": "5bab38a4d85053c1d8ec5c73fd83c57ab5f41c1f4b1245120a2561150dc45fd8"
+    },
+    {
+      "file": "result.png",
+      "sha256": "c09a51ca3fe67c0bd9d7372d090fdc5f193f81609751ef88145c9353e2dfa6ba"
+    },
+    {
+      "file": "info.png",
+      "sha256": "92782f8d9837f4d48e8048bf991bbb36027e1c70bc22a761e7ab8fae3e0cd1a1"
+    },
+    {
+      "file": "settings.png",
+      "sha256": "ec394707bbf157764b6e449b550b245c7e99d0ba8c7e750f718e6898197522ad"
+    },
+    {
+      "file": "dex.png",
+      "sha256": "8c3a3a925cb2c4b5c9084d1863670baa8dab5e045c91a54bdaba33a7de0ca497"
+    },
+    {
+      "file": "confirm.png",
+      "sha256": "050d7d34b53dd19f36cacb589c74aac03083565e21a4f2ba4ac06c749b4c53f1"
+    },
+    {
+      "file": "sleep.png",
+      "sha256": "2c5671ceaba36c05bae031305b983cfa0eaa41d9d826b8353328327dceb71ac1"
+    },
+    {
+      "file": "shiny.png",
+      "sha256": "b7f8ccbb92d90a18b4348aeef5101bca467b37e2b5e8950aebd3fbd33cd26a2f"
+    },
+    {
+      "file": "raichu.png",
+      "sha256": "950357c9054e305f833b5c1fd79b579e1f74bb6a4f8ea724d0a9428fa5218a6b"
+    },
+    {
+      "file": "egg.png",
+      "sha256": "dbde38eaf404c342f3220e721de8c8f984b7b8de4ee239365fa3f22250cc85b9"
+    },
+    {
+      "file": "status.png",
+      "sha256": "8f4aa470d7619ebc36611c49cc666ad5cd5e3d363f199d6b3cb57a8243fec949"
+    },
+    {
+      "file": "rhythm-ready.png",
+      "sha256": "aa82c1319befb16ac827c145ce591b5368faeb9c98959ba655ed474ab1151fee"
+    },
+    {
+      "file": "rhythm-wait.png",
+      "sha256": "55eabc0f822bd76779a0528f3e700ea6599f8bb7acce27634913ba34eb678cd3"
+    },
+    {
+      "file": "rhythm-cue.png",
+      "sha256": "0bfb16472e7b76b0f0356934868884ed872ae7a96658d4f6b6ad0f193c57318e"
+    },
+    {
+      "file": "rhythm-perfect.png",
+      "sha256": "4ea807b57966cba9533e031bf7076ff9d28444a329a0c2f7120354384cae2559"
+    },
+    {
+      "file": "rhythm-result.png",
+      "sha256": "e72e92f09dd1525070c5a5e319178004c9fd778169fb8b4711bea8d7152766a4"
+    },
+    {
+      "file": "catch-falling.png",
+      "sha256": "d189b8cffbc777edb30e103c1a7df0b8666aafbcdb0851e431ebaca65ced7c8f"
+    },
+    {
+      "file": "catch-collected.png",
+      "sha256": "02f46e52c8501a25a237c1e337eca68b3e3f05c592c9c49e7e3838650caeee50"
+    },
+    {
+      "file": "catch-missed.png",
+      "sha256": "bbece821003d1c35541a958ea87feeba2a0c5686a42db4f2b8b66bf0cae6fdf7"
+    },
+    {
+      "file": "catch-result.png",
+      "sha256": "58c13fa3a5ab23f46f80a418aa045db0c570737ebf74233487aa0a2ff6e18c91"
+    },
+    {
+      "file": "training-charge.png",
+      "sha256": "74609bc2389c94762ce94accd919325f5e56ce69c4062834c0aee1e3edf3acfe"
+    },
+    {
+      "file": "training-punch.png",
+      "sha256": "b05841cedb276c4945427706d039d176990b7165b86f11275b4a0b0930e360c1"
+    },
+    {
+      "file": "training-break.png",
+      "sha256": "1b94b3d6a8a60900c25e6abcaddbe82561a3d94dc68084696b4bf0b6e1976807"
+    },
+    {
+      "file": "training-result.png",
+      "sha256": "4784c501b65a821e5587a54fbb93781923d0939b034a473f5d8ad55bfacb4d9d"
+    }
+  ]
+}

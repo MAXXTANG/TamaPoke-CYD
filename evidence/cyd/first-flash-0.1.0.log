@@ -1,0 +1,33 @@
+esptool.py v4.5.1
+Serial port /dev/cu.usbserial-21110
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: [omitted]
+Uploading stub...
+Running stub...
+Stub running...
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x000f9fff...
+Compressed 1023312 bytes to 230678...
+Writing at 0x00000000... (6 %)
+Writing at 0x000115c5... (13 %)
+Writing at 0x0007d03f... (20 %)
+Writing at 0x000ae47a... (26 %)
+Writing at 0x000bdeb3... (33 %)
+Writing at 0x000c31f9... (40 %)
+Writing at 0x000c8572... (46 %)
+Writing at 0x000cde10... (53 %)
+Writing at 0x000d33e1... (60 %)
+Writing at 0x000d8801... (66 %)
+Writing at 0x000ddf0b... (73 %)
+Writing at 0x000e63f4... (80 %)
+Writing at 0x000ee5e1... (86 %)
+Writing at 0x000f3b8f... (93 %)
+Writing at 0x000f9564... (100 %)
+Wrote 1023312 bytes (230678 compressed) at 0x00000000 in 22.2 seconds (effective 368.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

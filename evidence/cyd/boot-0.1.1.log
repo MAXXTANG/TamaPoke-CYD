@@ -1,0 +1,16 @@
+ets Jul 29 2019 12:21:46
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+TamaPoke 0.1.1-cyd cyd-st7789: ESP32 / 4MB / no PSRAM
+SPRITE species=25 shiny=0 flash_bytes=159043 copied_bytes=0
+STATUS version=0.1.1-cyd variant=cyd-st7789 species=25 level=1 food=80 joy=80 energy=80 clean=100 heap=332060 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1
+STATUS version=0.1.1-cyd variant=cyd-st7789 species=25 level=1 food=80 joy=80 energy=80 clean=100 heap=332060 largest=114676 psram=0 band_bytes=15360 time_valid=0 calibrated=1
+TIME 1795525214 valid=1
+DONE
+STATUS version=0.1.1-cyd variant=cyd-st7789 species=25 level=1 food=80 joy=80 energy=80 clean=100 heap=332060 largest=114676 psram=0 band_bytes=15360 time_valid=1 calibrated=1

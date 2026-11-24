@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-24T15:07:43.211Z",
+  "url": "http://127.0.0.1:8765/",
+  "checks": [
+    "real pinned libraries load under CSP",
+    "responsive layout at 1280, 390 and 320 pixels",
+    "update consent and configuration locks",
+    "mock update writes only app and verifies NVS",
+    "mock first installation requires erase acknowledgement",
+    "wrong chip stops before write",
+    "cancelled picker recovers",
+    "incompatible partitions stop update",
+    "unsupported browser guidance and disabled controls"
+  ],
+  "browser_exceptions": [],
+  "hardware_flash_tested": false,
+  "hardware_scope": "Browser writes used a fake loader; physical firmware validation is recorded separately under evidence/cyd/.",
+  "vendor_source": "Real pinned libraries loaded in initial layout check; only device-facing ESPLoader was replaced for mock write flows."
+}

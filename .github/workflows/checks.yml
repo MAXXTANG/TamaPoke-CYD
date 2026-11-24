@@ -1,0 +1,36 @@
+name: Verify CYD source and website
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: make -C TamaPoke/test CXX=g++ run asan
+      - run: python3 tools/generate_embedded.py --check
+      - run: python3 -m unittest discover -s test -p 'test_*cyd*.py' -v
+      - run: python3 tools/check_web.py
+      - run: python3 tools/render_cyd.py
+      - run: python3 tools/check_cyd_design.py
+      - run: python3 tools/check_cyd.py
+      - run: node --test test/web-*.test.mjs
+  firmware:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        board: [cyd-st7789, cyd-ili9341]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install platformio==6.2.0
+      - run: pio run -d cyd -e ${{ matrix.board }}

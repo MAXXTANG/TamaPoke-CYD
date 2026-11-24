@@ -1,0 +1,52 @@
+{
+  "kind": "host-rendered firmware UI examples, not physical LCD photos",
+  "sample_save": true,
+  "resolution": [
+    320,
+    240
+  ],
+  "screens": [
+    "home",
+    "food",
+    "games",
+    "catch",
+    "training",
+    "result",
+    "info",
+    "settings",
+    "dex",
+    "confirm",
+    "sleep",
+    "shiny",
+    "raichu",
+    "egg",
+    "status",
+    "rhythm-ready",
+    "rhythm-wait",
+    "rhythm-cue",
+    "rhythm-perfect",
+    "rhythm-result",
+    "catch-falling",
+    "catch-collected",
+    "catch-missed",
+    "catch-result",
+    "training-charge",
+    "training-punch",
+    "training-break",
+    "training-result"
+  ],
+  "command": "python3 tools/render_cyd.py",
+  "source_sha256": {
+    "cyd/include/ui.h": "497df58016c541cf1e2ad498f8d50212e8ce3a59e18569bc7daefd7aea5f5f83",
+    "cyd/include/pixel_art.h": "7a5e089524bfbc483747615913d371ec15bfcb31e3fe78a65ac12f0f53c5bcf7",
+    "cyd/include/model.h": "df9c0e65f94d1346b6d071feb9312a8203025cc751ec5e507213a2f6df876a03",
+    "cyd/include/rhythm.h": "f885b2f4d86296f95f253a701d00e35ddd806d3cd4e0257cc67bf47cae01bafd",
+    "cyd/include/games.h": "86269042a1b73b20f00d713cb4836c239853b8ba142f0367093b4b31ba64fbc6",
+    "cyd/include/sprite.h": "f7fad4fd859479f659c91e1ddc1a1e33b9eb30642a6d3299fba7a4e8284836b6",
+    "cyd/include/version.h": "4ce3d94fdbc1010c682e20dc82535ce6b458b48dd2f0fee104254705423b1479",
+    "cyd/test/host_canvas.h": "62072cc1ff3cd29a59050b37c9955110cf8e10c958a10a897f2e970869500f23",
+    "cyd/test/render.cpp": "4406ed200e1ed8623fe668f42e23a3669007c670d9f6f04d9c3fa233dfca8fa2",
+    "TamaPoke/embedded_mon.cpp": "f42521ce74e0642c0447927f031f8cb1d3f05f5b77d52060a09a86bcb99a4e7a",
+    "TamaPoke/species.h": "5eac3ba6a80967284a4f9abcffa731f1b1ecdd55bafd0982f2533638971392fe"
+  }
+}

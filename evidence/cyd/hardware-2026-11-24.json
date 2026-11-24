@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-11-24T13:24:13.434039+00:00",
+  "firmware_source_commit": "127f7d1",
+  "identification": {
+    "usb_bridge": "CH340",
+    "usb_vid_pid": "1A86:7523",
+    "chip": "ESP32-D0WD-V3",
+    "revision": "v3.1",
+    "flash_bytes": 4194304
+  },
+  "lcd_profile": {
+    "selected": "ST7789",
+    "basis": "same dual-USB CYD used by the earlier station-board project",
+    "physical_confirmation": "User reported normal display and touch"
+  },
+  "backup": {
+    "bytes": 4194304,
+    "esptool_md5_checked": true,
+    "local_sha256_checked": true,
+    "stored_locally_outside_git": true
+  },
+  "flash_write_authorized": true,
+  "flashed": true,
+  "boot_tested": true,
+  "touch_tested": true,
+  "runtime_heap_measured": true,
+  "power_cycle_save_tested": false,
+  "touch_verification": "User confirmed four-point calibration, normal picture and touch",
+  "free_heap_bytes": 332060,
+  "largest_heap_block_bytes": 114676,
+  "psram_bytes": 0,
+  "render_band_bytes": 15360,
+  "usb_clock_set": true,
+  "calibration_saved_after_restart": true,
+  "nvs_preserved_across_update": true,
+  "nvs_preservation_scope": "20480 bytes identical before and after 0.1.1 update",
+  "boot_warnings_after_diagnostic_clear": false,
+  "full_4mb_factory_install_tested": false,
+  "installed_firmware": {
+    "version": "0.1.1-cyd",
+    "app_sha256": "4347e5c3ca2cdac1cf0d8745245a4c86604bf4cdc00aad1d4c21ab75be5e3374",
+    "partition_sha256": "b4ede05dd62c982a3e6c3c5063e67fa36cfa1d289281f17803ba4ceefb616b94",
+    "method": "0x8000 partition table and 0x10000 app; 0x3f0000 diagnostic area cleared",
+    "write_md5_verified": true
+  }
+}

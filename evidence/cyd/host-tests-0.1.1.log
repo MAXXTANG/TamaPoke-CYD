@@ -1,0 +1,32 @@
+c++ -std=c++17 -O1 -g -Wall -Wextra -Wno-unused-parameter -fno-omit-frame-pointer -I shim -o build/tamapoke_tests main.cpp shim/shim.cpp test_pet.cpp test_dex.cpp test_i18n.cpp test_blit.cpp test_batcurve.cpp test_power.cpp test_bootbutton.cpp test_screenlock.cpp test_trainingtouch.cpp ../pet.cpp ../i18n.cpp ../screenlock.cpp ../trainingtouch.cpp ../embedded_mon.cpp ../../cyd/test/test_cyd.cpp
+
+cyd
+  ok   flash_sprites_and_all_frames_are_bounded
+  ok   usb_time_rejects_overflow_and_invalid_dates
+  ok   malformed_sprite_headers_indices_and_actions
+  ok   four_point_calibration_rotation_and_rejection
+  ok   gesture_release_hold_drag_and_millis_wrap
+  ok   care_actions_persist_without_resetting_the_pet
+  ok   catch_game_rewards_once_and_survives_timer_wrap
+  ok   training_exit_and_release_confirmation
+  ok   settings_and_all_nav_hitboxes_are_on_screen
+  ok   band_render_matches_full_render_for_all_pages
+
+----------------------------------------
+10 tests, 481 asserts, 10 passed, 0 failed, 162 filtrados
+c++ -std=c++17 -O1 -g -Wall -Wextra -Wno-unused-parameter -fno-omit-frame-pointer -fsanitize=address,undefined -fno-sanitize-recover=all -I shim -o build/tamapoke_tests_asan main.cpp shim/shim.cpp test_pet.cpp test_dex.cpp test_i18n.cpp test_blit.cpp test_batcurve.cpp test_power.cpp test_bootbutton.cpp test_screenlock.cpp test_trainingtouch.cpp ../pet.cpp ../i18n.cpp ../screenlock.cpp ../trainingtouch.cpp ../embedded_mon.cpp ../../cyd/test/test_cyd.cpp
+
+cyd
+  ok   flash_sprites_and_all_frames_are_bounded
+  ok   usb_time_rejects_overflow_and_invalid_dates
+  ok   malformed_sprite_headers_indices_and_actions
+  ok   four_point_calibration_rotation_and_rejection
+  ok   gesture_release_hold_drag_and_millis_wrap
+  ok   care_actions_persist_without_resetting_the_pet
+  ok   catch_game_rewards_once_and_survives_timer_wrap
+  ok   training_exit_and_release_confirmation
+  ok   settings_and_all_nav_hitboxes_are_on_screen
+  ok   band_render_matches_full_render_for_all_pages
+
+----------------------------------------
+10 tests, 481 asserts, 10 passed, 0 failed, 162 filtrados

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#365b45">
+  <meta name="description" content="把皮卡丘養在 ESP32 CYD 2.8 吋觸控板上。滿版像素場景、三款小遊戲、網頁安裝與保留存檔更新。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <meta property="og:title" content="TamaPoke CYD｜像素皮卡丘與網頁燒錄">
+  <meta property="og:description" content="ESP32-2432S028 · 320×240 · 無須 PSRAM · 三款小遊戲">
+  <meta property="og:image" content="https://maxxtang.github.io/TamaPoke-CYD/assets/cover.png">
+  <title>TamaPoke CYD｜像素皮卡丘與網頁燒錄</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/screens/home.png" type="image/png">
+  <script defer src="./vendor/crypto-js-4.2.0/crypto-js.js"></script>
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#main">TamaPoke <strong>CYD</strong></a>
+    <nav aria-label="主要導覽"><a href="#install">網頁燒錄</a><a href="#play">怎麼玩</a><a href="#screens">介面截圖</a></nav>
+    <a class="source" href="https://github.com/MAXXTANG/TamaPoke-CYD">GitHub 原始碼</a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <img class="cover" src="./assets/cover.png" alt="TamaPoke CYD 像素草地封面插畫" width="1672" height="940" fetchpriority="high">
+      <div class="hero-copy">
+        <p class="eyebrow">ESP32 · CYD 2.8 吋 · 像素養成</p>
+        <h1 id="hero-title">把皮卡丘，<br>養在小小草地裡。</h1>
+        <p>餵食、摸摸、洗澡，再陪牠玩一局。<br>一塊觸控板，就是牠的像素世界。</p>
+        <div class="actions"><a class="button primary" href="#install">開始網頁燒錄</a><a class="button" href="#screens">看看遊戲畫面</a></div>
+        <p class="small">v0.4.0-cyd · 320×240 · 4 MB Flash · 無須 PSRAM</p>
+      </div>
+    </section>
+    <section class="install wrap" id="install" aria-labelledby="install-title">
+      <div class="section-title"><p class="eyebrow">插上 USB，就能準備開始</p><h2 id="install-title">安裝或更新遊戲</h2><p>使用電腦版 Chrome／Edge 與 USB 資料線。雙 USB 板可沿用 USB-A → Micro-USB。</p></div>
+      <div class="installer-layout">
+        <div class="installer">
+          <label class="field-label" for="board">你的 CYD 螢幕版本</label>
+          <select id="board"><option value="">請選擇板型</option><option value="cyd-st7789">雙 USB／ST7789（已實機驗證）</option><option value="cyd-ili9341">單 USB／ILI9341（僅編譯驗證）</option></select>
+          <p class="small" id="board-note">適用 ESP32-2432S028、傳統 ESP32、4 MB Flash。LCD 版本請依板子實際規格確認。</p>
+          <fieldset id="mode-group"><legend>這次要做什麼</legend>
+            <label class="mode"><input type="radio" name="mode" value="update" checked><span><strong>保留存檔更新</strong><small>已裝 CYD 0.1.1 以上版本，保留角色與校正。</small></span></label>
+            <label class="mode"><input type="radio" name="mode" value="factory"><span><strong>首次安裝</strong><small>從車站看板或其他程式改裝，會清除板上資料。</small></span></label>
+          </fieldset>
+          <label class="consent"><input id="consent" type="checkbox"><span id="consent-label">確認目前已安裝此 CYD 版遊戲（0.1.1 以上）。</span></label>
+          <div class="actions"><button id="connect" class="button primary" disabled>連接並檢查</button><button id="flash" class="button" disabled>開始更新</button><button id="disconnect" class="text-button" disabled>斷開連線</button></div>
+          <p id="install-status" class="status" role="status" aria-live="polite">正在準備燒錄工具。</p>
+          <progress id="progress" max="100" value="0" aria-label="韌體寫入進度" hidden></progress>
+          <p class="small">連接時開發板會進入燒錄模式，遊戲暫時停止。韌體及校驗工具都由本站提供，裝置資料不會上傳。</p>
+          <details><summary>診斷紀錄與韌體下載</summary><pre id="logs" aria-label="本次瀏覽器操作紀錄"></pre><p class="downloads"><a id="download-factory" hidden>下載首次安裝韌體</a><a id="download-app" hidden>下載更新韌體</a></p><p class="small">下載檔案供進階操作使用；首次安裝和更新檔案不能互換。</p></details>
+        </div>
+        <aside class="install-guide" aria-labelledby="guide-title">
+          <h3 id="guide-title">第一次玩，從這裡開始</h3>
+          <ol><li>核對螢幕版本，再連接 USB。</li><li>選擇安裝方式，點「連接並檢查」。</li><li>確認說明後，點「開始安裝」或「開始更新」。</li><li>首次安裝後，依序按住四個校正十字約 0.2 秒再放開。</li></ol>
+          <img class="pixel-screen" src="./assets/screens/home.png" alt="CYD 韌體主畫面示例：皮卡丘、需求列與底部四個圖示" width="320" height="240" loading="lazy">
+          <p class="small">畫面為同版韌體繪圖示例。ST7789 已實機驗收，ILI9341 尚未上板測試。</p>
+        </aside>
+      </div>
+      <div class="clock-panel"><div><h3>重新開機後，同步一次時間</h3><p>遊戲使用軟體時鐘。校時後才會計算離線時間與每日照顧；養成本身不用連網。</p></div><button class="button" id="clock" disabled>連接並同步時間</button><p id="clock-status" role="status" aria-live="polite"></p></div>
+    </section>
+    <section class="wrap" id="play" aria-labelledby="play-title">
+      <div class="section-title"><p class="eyebrow">陪牠吃飽，也陪牠玩</p><h2 id="play-title">四個照顧圖示，三款小遊戲</h2></div>
+      <div class="care"><p><strong>樹果</strong><span>餵食與點心</span></p><p><strong>精靈球</strong><span>開啟遊戲選單</span></p><p><strong>月亮</strong><span>睡覺與喚醒</span></p><p><strong>泡泡</strong><span>清潔身體</span></p></div>
+      <div class="game-grid">
+        <article><img class="pixel-screen" src="./assets/screens/rhythm-perfect.png" alt="節奏擊掌成功：皮卡丘靠近手掌，出現愛心與星星" width="320" height="240" loading="lazy"><h3>節奏擊掌</h3><p>等游標進入亮區，再點 HIGH FIVE!。一局 12 拍，看看能連續擊掌幾次。</p></article>
+        <article><img class="pixel-screen" src="./assets/screens/catch-collected.png" alt="接星星成功：皮卡丘跑動跳接，顯示連擊" width="320" height="240" loading="lazy"><h3>追星跳接</h3><p>點下落的星星，讓皮卡丘追上接住。20 秒內挑戰連擊，漏接後也能繼續。</p></article>
+        <article><img class="pixel-screen" src="./assets/screens/training-punch.png" alt="力量訓練：皮卡丘出拳，沙包晃動並出現加分" width="320" height="240" loading="lazy"><h3>蓄力出拳</h3><p>蓄力滿格再出拳，力道更強。沙包會晃動、裂開、碎落，15 秒後結算力量。</p></article>
+      </div>
+      <p class="small">每次點擊後記得抬起手指。BOOT 短按返回主畫面，長按 3 秒開設定、6 秒重新校正。這版沒有音效。</p>
+    </section>
+    <section class="wrap" id="screens" aria-labelledby="screens-title">
+      <div class="section-title"><p class="eyebrow">和板上使用相同繪圖程式</p><h2 id="screens-title">介面截圖</h2><p>以下使用示例存檔，為韌體直接繪圖，並非 LCD 攝影。</p></div>
+      <div class="screen-grid">
+        <figure><img class="pixel-screen" src="./assets/screens/home.png" alt="滿版皮卡丘主畫面" width="320" height="240" loading="lazy"><figcaption>主畫面</figcaption></figure>
+        <figure><img class="pixel-screen" src="./assets/screens/food.png" alt="樹果與糖果餵食選單" width="320" height="240" loading="lazy"><figcaption>餵食選單</figcaption></figure>
+        <figure><img class="pixel-screen" src="./assets/screens/status.png" alt="角色需求數值視窗" width="320" height="240" loading="lazy"><figcaption>需求狀態</figcaption></figure>
+        <figure><img class="pixel-screen" src="./assets/screens/sleep.png" alt="夜間像素草地與睡覺的皮卡丘" width="320" height="240" loading="lazy"><figcaption>晚安時間</figcaption></figure>
+        <figure><img class="pixel-screen" src="./assets/screens/games.png" alt="三款小遊戲的入口" width="320" height="240" loading="lazy"><figcaption>遊戲選單</figcaption></figure>
+        <figure><img class="pixel-screen" src="./assets/screens/training-break.png" alt="滿力出拳擊破沙包" width="320" height="240" loading="lazy"><figcaption>沙包擊破</figcaption></figure>
+      </div>
+      <a href="https://github.com/MAXXTANG/TamaPoke-CYD/tree/main/docs/cyd/screens">查看全部 28 張介面與來源紀錄</a>
+    </section>
+    <section class="wrap faq" aria-labelledby="faq-title"><div class="section-title"><h2 id="faq-title">常見問題</h2></div>
+      <details><summary>這和微雪 1.75 吋版本一樣嗎？</summary><p>這是獨立的 CYD 2.8 吋版本，使用傳統 ESP32、4 MB Flash 與 320×240 LCD。微雪 ESP32-S3 的韌體無法套用到這塊板子。</p></details>
+      <details><summary>更新會清空角色嗎？</summary><p>選「保留存檔更新」會先比對板上分割表，只寫入程式區，最後比對完整存檔區。若是首次安裝，原程式、角色與校正都會清除。請先選對安裝方式。</p></details>
+      <details><summary>連不上開發板怎麼辦？</summary><p>使用電腦版 Chrome 或 Edge，確認 USB 線支援資料傳輸，並關閉 Arduino IDE、序列埠監控等程式。若仍停在連線中，可按住 BOOT，按一下 RESET，再放開 BOOT 後重試。</p></details>
+      <details><summary>需要 microSD、Wi-Fi 或 PSRAM 嗎？</summary><p>不用。皮卡丘和雷丘的一般／異色動畫都放在 Flash。這版沒有完整 151 隻素材、音效、Wi-Fi 校時或電池管理；以 USB 供電遊玩。</p></details>
+      <details><summary>觸控歪掉了，要怎麼重做校正？</summary><p>持續按住 BOOT 到 6 秒，依序按住四個十字約 0.2 秒並放開。完成後保存校正值，並恢復原本的旋轉方向。</p></details>
+      <details><summary>想用命令列或備份原程式？</summary><p>請參考 <a href="https://github.com/MAXXTANG/TamaPoke-CYD/blob/main/docs/cyd/README.md">編譯、完整 Flash 備份與進階安裝說明</a>。原始 Flash 備份只保存於你自己的電腦，不會上傳到本網站或 repo。</p></details>
+    </section>
+  </main>
+  <footer class="wrap"><p>TamaPoke CYD · v0.4.0-cyd · <a href="https://github.com/MAXXTANG/TamaPoke-CYD">MAXXTANG / GitHub</a></p><p class="small">非官方、非商業粉絲專案。角色與名稱屬 Nintendo／Game Freak／The Pokémon Company；像素素材來自 PMD SpriteCollab。<a href="https://github.com/MAXXTANG/TamaPoke-CYD/blob/main/THIRD_PARTY_NOTICES.md">授權與來源</a>。封面為 AI 生成專案插畫。</p></footer>
+</body>
+</html>

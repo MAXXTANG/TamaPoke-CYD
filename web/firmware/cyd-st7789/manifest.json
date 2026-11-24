@@ -1,0 +1,68 @@
+{
+  "version": "0.4.0-cyd",
+  "variant": "cyd-st7789",
+  "chip": "ESP32",
+  "flash_bytes": 4194304,
+  "psram_required": false,
+  "factory_offset": 0,
+  "app_offset": 65536,
+  "partition_app_bytes": 3145728,
+  "render_band_bytes": 15360,
+  "dependencies": {
+    "platformio_core": "6.2.0",
+    "espressif32": "6.5.0",
+    "arduino_esp32": "2.0.14",
+    "tft_espi": "2.5.43"
+  },
+  "first_install_clears_nvs": true,
+  "hardware_validation": "See docs/cyd/VALIDATION.md; results apply only to the recorded variant and image SHA-256",
+  "source_base_commit": "021e84688e47eae0d806cf0e38403b21772b2718",
+  "source_sha256": {
+    "TamaPoke/audio.h": "4e761f42c3e2649cedd4c62ce93de94cf77535bbc89c1e3872d65022ac52e87b",
+    "TamaPoke/dex.h": "5d638eadf0f0ac16788633c3f555fbbb505d9c4817a70a583e1591e0e041b34a",
+    "TamaPoke/embedded_mon.cpp": "f42521ce74e0642c0447927f031f8cb1d3f05f5b77d52060a09a86bcb99a4e7a",
+    "TamaPoke/embedded_mon.h": "2e8996290e721acae7e4af10258bc3aa849fad15e1fe1162bfb2a31e02445acc",
+    "TamaPoke/i18n.cpp": "0d060d8db4b2c99342137edeb6968d68f3a3c4f080936014e1f13e11b322a033",
+    "TamaPoke/i18n.h": "59693d7b8413e9c30a64d565a36262fb190f20415eb95f09e0965ee5be390a68",
+    "TamaPoke/pet.cpp": "9ea0bed64eebc733695b552c431d61b3e3c6c33c910f3267ffaa6946facca701",
+    "TamaPoke/pet.h": "be872f626d0410ca024d499daa6d6d97569109c81c2dce6b7c8a794c48806c43",
+    "TamaPoke/species.h": "5eac3ba6a80967284a4f9abcffa731f1b1ecdd55bafd0982f2533638971392fe",
+    "cyd/include/board_setup.h": "10c8f098936dd68ea988dabaca42135f6938b990bec78cdc52fbce49a67e198b",
+    "cyd/include/calibration.h": "9d12a6e17e029c0cbcd941da305e3e53e8ffdcb45e01c878e7c988ff7a7e85a9",
+    "cyd/include/games.h": "86269042a1b73b20f00d713cb4836c239853b8ba142f0367093b4b31ba64fbc6",
+    "cyd/include/input.h": "f0d32c5386d362ea8638ba0dae206a2f3e001382c4da5abd87541a965cdb3eb2",
+    "cyd/include/model.h": "df9c0e65f94d1346b6d071feb9312a8203025cc751ec5e507213a2f6df876a03",
+    "cyd/include/pixel_art.h": "7a5e089524bfbc483747615913d371ec15bfcb31e3fe78a65ac12f0f53c5bcf7",
+    "cyd/include/protocol.h": "abc9a9946989f609c5be9f9b52e341f471a30cffdf96108381575d27ed71c2f6",
+    "cyd/include/rhythm.h": "f885b2f4d86296f95f253a701d00e35ddd806d3cd4e0257cc67bf47cae01bafd",
+    "cyd/include/sprite.h": "f7fad4fd859479f659c91e1ddc1a1e33b9eb30642a6d3299fba7a4e8284836b6",
+    "cyd/include/touch.h": "e0efd87aa513c3e3bfdf636d92656c509a22de6eb337c27bf30fb7e60a4bdbd7",
+    "cyd/include/ui.h": "497df58016c541cf1e2ad498f8d50212e8ce3a59e18569bc7daefd7aea5f5f83",
+    "cyd/include/version.h": "4ce3d94fdbc1010c682e20dc82535ce6b458b48dd2f0fee104254705423b1479",
+    "cyd/partitions.csv": "661f4eb36c032af134a909abe90efd02804fa6176bb3e249cf2a26a8fb258b2b",
+    "cyd/platformio.ini": "bff96f7589389133a35e4dae07baf9dad46d7999348fda526a726e06235ac0b9",
+    "cyd/src/audio.cpp": "4cb6bab4d3f250ec09ff8da6c9bec323b5b809f42b7003ddb291e79283659014",
+    "cyd/src/main.cpp": "39e027244fd6738448aef1a9791850c24f5c98aa8ffc70e8c5c3ab1cc954bc17",
+    "cyd/src/shared_embedded.cpp": "fd2ecbbe0c8abe288019caa0fd7988ca56969da3ef8814a63280076ef0f46014",
+    "cyd/src/shared_i18n.cpp": "0dd51d0234a83e5bc175daf43111a3bfa44ec59ffb98d340ae98578aa3c78c1f",
+    "cyd/src/shared_pet.cpp": "d00b2381eeae955ffbd1a93b56cf56f4b10b256442fa954358b260cd8053ab35"
+  },
+  "files": {
+    "bootloader.bin": {
+      "bytes": 17536,
+      "sha256": "0f65515a7e0dfe9cc4bc78c01bef79c941af1b2deb34d01ddd500ee3d465eedf"
+    },
+    "partitions.bin": {
+      "bytes": 3072,
+      "sha256": "b4ede05dd62c982a3e6c3c5063e67fa36cfa1d289281f17803ba4ceefb616b94"
+    },
+    "tamapoke-cyd-app.bin": {
+      "bytes": 970192,
+      "sha256": "ddf414d9c2cb31bfe7f88c1134ca502cdfdebf35ca13f071d51229d80abbb4ef"
+    },
+    "tamapoke-cyd-factory.bin": {
+      "bytes": 4194304,
+      "sha256": "733175e374946eee1d51008ec8bc40db414854dddb9cf10a857527586cc8808d"
+    }
+  }
+}

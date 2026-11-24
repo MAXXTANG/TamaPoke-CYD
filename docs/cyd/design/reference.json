@@ -1,0 +1,22 @@
+{
+  "reference": "User-approved pixel layout, default idle canvas, exported using isolated headless Chrome",
+  "resolution": [
+    320,
+    240
+  ],
+  "format": "RGB565LE, zlib compressed",
+  "reference_sha256": "cf1811a55ce29ce895165df3a545bdbfb74a5b71a19f03f41acca4625fc7fa57",
+  "approved_layout_sha256": "4978144b02d0d0ff1b3926476bfbb564b8fe50c403650af5fa192194b4abd49a",
+  "quantization": "R>>3, G>>2, B>>3; same as LCD RGB565",
+  "fixture": {
+    "species": 25,
+    "shiny": false,
+    "level": 1,
+    "food": 80,
+    "joy": 80,
+    "energy": 80,
+    "clean": 100,
+    "millis": 0
+  },
+  "different_pixels": 0
+}

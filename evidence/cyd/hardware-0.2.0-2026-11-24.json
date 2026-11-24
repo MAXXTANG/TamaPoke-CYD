@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-11-24T14:03:53.226797+00:00",
+  "version": "0.2.0-cyd",
+  "source_parent_commit": "417283f",
+  "identification": {
+    "usb_bridge": "CH340",
+    "chip": "ESP32-D0WD-V3",
+    "revision": "v3.1",
+    "flash_bytes": 4194304,
+    "variant": "cyd-st7789"
+  },
+  "original_backup_verified_sha256": true,
+  "installed_app_sha256": "c2732039b7a184d1deeacaefef7b1cf958b99e561ecad804f7cafb519661b68e",
+  "partition_sha256": "b4ede05dd62c982a3e6c3c5063e67fa36cfa1d289281f17803ba4ceefb616b94",
+  "flash_method": "app only at 0x10000; partition and NVS untouched",
+  "esptool_write_hash_verified": true,
+  "nvs": {
+    "bytes": 20480,
+    "before_after_identical": true,
+    "sha256": "cf3e004dcdb44b459ed5fa5f3efb012f8b3ffd4f9c2c69ec7eb9d446e281857f",
+    "scope": "immediately around app update, before USB clock sync and user care actions",
+    "raw_backups_git_ignored": true
+  },
+  "boot": {
+    "version": "0.2.0-cyd",
+    "species": 25,
+    "level": 1,
+    "food": 0,
+    "joy": 0,
+    "energy": 25,
+    "clean": 0,
+    "calibrated": true,
+    "free_heap_bytes": 332044,
+    "largest_heap_block_bytes": 114676,
+    "psram_bytes": 0,
+    "band_bytes": 15360
+  },
+  "clock_sync": {
+    "verified": true,
+    "offline_minutes_applied": 5,
+    "resulting_level": 2,
+    "note": "Normal existing core progression; no reset or migration of saved pet"
+  },
+  "display_capture": {
+    "file": "device-frame-0.2.0.png",
+    "kind": "device-generated pixels over USB, not an LCD photograph",
+    "rgb565_sha256": "ee8d48541c52d02a13c0d564b3879201b5ec6605907ebb4cf03f3c07afc00c95"
+  },
+  "user_acceptance": {
+    "reported": true,
+    "quote": "畫面與四個圖示操作正常",
+    "scope": "full-screen picture and four bottom care controls"
+  },
+  "runtime": {
+    "recorded_at": "2026-11-24T14:01:53.772696+00:00",
+    "scope": "short live USB run, not long-term soak or physical power cycle",
+    "duration_seconds": 30.575,
+    "heap_min_bytes": 331900,
+    "heap_max_bytes": 331900,
+    "largest_block_min_bytes": 114676,
+    "frame_us_min": 51997,
+    "frame_us_max": 62906,
+    "max_frame_us_observed": 64541,
+    "observed_render_fps": 8.340147179067866
+  },
+  "power_cycle_save_tested": false,
+  "long_soak_tested": false,
+  "ili9341_hardware_tested": false,
+  "full_factory_install_tested": false,
+  "both_games_full_manual_acceptance": false
+}

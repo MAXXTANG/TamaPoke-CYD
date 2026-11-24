@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-11-24T14:18:57.357732+00:00",
+  "version": "0.3.0-cyd",
+  "source_parent_commit": "8858fc1",
+  "selected_design": "Rhythm high five",
+  "identification": {
+    "usb_bridge": "CH340",
+    "chip": "ESP32-D0WD-V3",
+    "revision": "v3.1",
+    "flash_bytes": 4194304,
+    "variant": "cyd-st7789"
+  },
+  "installed_app_sha256": "59068309e13900d8318839d3456184d675b5f80f95f6294c7078fdb5f7f5a26f",
+  "partition_sha256": "b4ede05dd62c982a3e6c3c5063e67fa36cfa1d289281f17803ba4ceefb616b94",
+  "flash_method": "app only at 0x10000; partition and NVS untouched",
+  "write_hash_verified": true,
+  "original_full_flash_backup_reverified": true,
+  "nvs": {
+    "bytes": 20480,
+    "before_after_identical": true,
+    "sha256": "4a156a449a3a621b5b6c766af374707233b406a6e571fe8766f3bf1a147aaea1",
+    "scope": "before app update and after final app, before clock sync or user care actions",
+    "raw_files_git_ignored": true
+  },
+  "boot_status": {
+    "version": "0.3.0-cyd",
+    "variant": "cyd-st7789",
+    "species": 25,
+    "level": 2,
+    "food": 58,
+    "joy": 15,
+    "energy": 0,
+    "clean": 84,
+    "heap": 332028,
+    "largest": 114676,
+    "psram": 0,
+    "band_bytes": 15360,
+    "time_valid": 1,
+    "calibrated": 1,
+    "frame_us": 62220,
+    "max_frame_us": 62421,
+    "frames": 2,
+    "uptime_ms": 1014,
+    "page": 0,
+    "beat": 0,
+    "hits": 0,
+    "combo": 0,
+    "rhythm_running": 0
+  },
+  "runtime": {
+    "recorded_at": "2026-11-24T14:19:23.976141+00:00",
+    "scope": "live USB observations during user test; no synthetic touch commands",
+    "duration_seconds": 96.089,
+    "heap_min_bytes": 332028,
+    "heap_max_bytes": 332028,
+    "largest_block_min_bytes": 114676,
+    "max_frame_us_observed": 62421,
+    "rhythm_observed": false,
+    "result_observed": false
+  },
+  "manual_game_acceptance": {
+    "status": "passed",
+    "quote": "節奏擊掌 可以",
+    "scope": "user confirmed rhythm high-five game on the flashed 0.3.0; USB session from that run did not capture gameplay"
+  },
+  "power_cycle_tested": false,
+  "long_soak_tested": false,
+  "ili9341_hardware_tested": false,
+  "remote_ci_run": false
+}

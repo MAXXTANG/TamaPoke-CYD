@@ -1,0 +1,267 @@
+<pio-python>/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Processing cyd-st7789 (platform: espressif32@6.5.0; framework: arduino; board: esp32dev)
+--------------------------------------------------------------------------------
+<pio-python>/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.5.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES:
+ - framework-arduinoespressif32 @ 3.20014.231204 (2.0.14)
+ - tool-esptoolpy @ 1.40501.0 (4.5.1)
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 34 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- TFT_eSPI @ 2.5.43
+|-- Preferences @ 2.0.0
+|-- SPI @ 2.0.0
+Building in release mode
+Compiling .pio/build/cyd-st7789/src/audio.cpp.o
+Compiling .pio/build/cyd-st7789/src/main.cpp.o
+Compiling .pio/build/cyd-st7789/src/shared_embedded.cpp.o
+Compiling .pio/build/cyd-st7789/src/shared_i18n.cpp.o
+Compiling .pio/build/cyd-st7789/src/shared_pet.cpp.o
+Building .pio/build/cyd-st7789/bootloader.bin
+Generating partitions .pio/build/cyd-st7789/partitions.bin
+Compiling .pio/build/cyd-st7789/liba18/SPI/SPI.cpp.o
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio/build/cyd-st7789/lib598/FS/FS.cpp.o
+Compiling .pio/build/cyd-st7789/lib598/FS/vfs_api.cpp.o
+In file included from src/main.cpp:3:
+.pio/libdeps/cyd-st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio/build/cyd-st7789/lib486/SPIFFS/SPIFFS.cpp.o
+Compiling .pio/build/cyd-st7789/lib574/LittleFS/LittleFS.cpp.o
+Compiling .pio/build/cyd-st7789/libbc0/TFT_eSPI/TFT_eSPI.cpp.o
+Compiling .pio/build/cyd-st7789/lib377/Preferences/Preferences.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/Esp.cpp.o
+Archiving .pio/build/cyd-st7789/liba18/libSPI.a
+Compiling .pio/build/cyd-st7789/FrameworkArduino/FirmwareMSC.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/FunctionalInterrupt.cpp.o
+Indexing .pio/build/cyd-st7789/liba18/libSPI.a
+In file included from .pio/libdeps/cyd-st7789/TFT_eSPI/TFT_eSPI.cpp:16:
+.pio/libdeps/cyd-st7789/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio/build/cyd-st7789/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/IPv6Address.cpp.o
+Archiving .pio/build/cyd-st7789/lib486/libSPIFFS.a
+Archiving .pio/build/cyd-st7789/lib598/libFS.a
+Indexing .pio/build/cyd-st7789/lib486/libSPIFFS.a
+Indexing .pio/build/cyd-st7789/lib598/libFS.a
+Compiling .pio/build/cyd-st7789/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/Print.cpp.o
+Archiving .pio/build/cyd-st7789/lib574/libLittleFS.a
+Indexing .pio/build/cyd-st7789/lib574/libLittleFS.a
+Compiling .pio/build/cyd-st7789/FrameworkArduino/Stream.cpp.o
+Archiving .pio/build/cyd-st7789/lib377/libPreferences.a
+Indexing .pio/build/cyd-st7789/lib377/libPreferences.a
+Compiling .pio/build/cyd-st7789/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/main.cpp.o
+Compiling .pio/build/cyd-st7789/FrameworkArduino/stdlib_noniso.c.o
+Archiving .pio/build/cyd-st7789/libbc0/libTFT_eSPI.a
+Compiling .pio/build/cyd-st7789/FrameworkArduino/wiring_pulse.c.o
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c: In function 'uartSetPins':
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c:153:9: warning: 'return' with no value, in function returning non-void
+         return;
+         ^~~~~~
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c:149:6: note: declared here
+ bool uartSetPins(uint8_t uart_num, int8_t rxPin, int8_t txPin, int8_t ctsPin, int8_t rtsPin)
+      ^~~~~~~~~~~
+Compiling .pio/build/cyd-st7789/FrameworkArduino/wiring_shift.c.o
+Indexing .pio/build/cyd-st7789/libbc0/libTFT_eSPI.a
+Archiving .pio/build/cyd-st7789/libFrameworkArduino.a
+Indexing .pio/build/cyd-st7789/libFrameworkArduino.a
+Linking .pio/build/cyd-st7789/firmware.elf
+Retrieving maximum program size .pio/build/cyd-st7789/firmware.elf
+Checking size .pio/build/cyd-st7789/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]   7.0% (used 23028 bytes from 327680 bytes)
+Flash: [===       ]  30.4% (used 957413 bytes from 3145728 bytes)
+Building .pio/build/cyd-st7789/firmware.bin with action:
+  "$PYTHONEXE" "$OBJCOPY" --chip esp32 elf2image --flash_mode ${__get_board_flash_mode(__env__)} --flash_freq ${__get_board_f_flash(__env__)} --flash_size 4MB --elf-sha256-offset 0xb0 -o $TARGET $SOURCES
+Building .pio/build/cyd-st7789/firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 5.18 seconds =========================
+
+Processing cyd-ili9341 (platform: espressif32@6.5.0; framework: arduino; board: esp32dev)
+--------------------------------------------------------------------------------
+<pio-python>/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.5.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES:
+ - framework-arduinoespressif32 @ 3.20014.231204 (2.0.14)
+ - tool-esptoolpy @ 1.40501.0 (4.5.1)
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 34 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- TFT_eSPI @ 2.5.43
+|-- Preferences @ 2.0.0
+|-- SPI @ 2.0.0
+Building in release mode
+Compiling .pio/build/cyd-ili9341/src/audio.cpp.o
+Compiling .pio/build/cyd-ili9341/src/main.cpp.o
+Compiling .pio/build/cyd-ili9341/src/shared_embedded.cpp.o
+Compiling .pio/build/cyd-ili9341/src/shared_i18n.cpp.o
+Compiling .pio/build/cyd-ili9341/src/shared_pet.cpp.o
+Building .pio/build/cyd-ili9341/bootloader.bin
+Generating partitions .pio/build/cyd-ili9341/partitions.bin
+Compiling .pio/build/cyd-ili9341/liba18/SPI/SPI.cpp.o
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Compiling .pio/build/cyd-ili9341/lib598/FS/FS.cpp.o
+Compiling .pio/build/cyd-ili9341/lib598/FS/vfs_api.cpp.o
+In file included from src/main.cpp:3:
+.pio/libdeps/cyd-ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio/build/cyd-ili9341/lib486/SPIFFS/SPIFFS.cpp.o
+Compiling .pio/build/cyd-ili9341/lib574/LittleFS/LittleFS.cpp.o
+Compiling .pio/build/cyd-ili9341/libd78/TFT_eSPI/TFT_eSPI.cpp.o
+Compiling .pio/build/cyd-ili9341/lib377/Preferences/Preferences.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/Esp.cpp.o
+Archiving .pio/build/cyd-ili9341/liba18/libSPI.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/FirmwareMSC.cpp.o
+Indexing .pio/build/cyd-ili9341/liba18/libSPI.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/IPAddress.cpp.o
+In file included from .pio/libdeps/cyd-ili9341/TFT_eSPI/TFT_eSPI.cpp:16:
+.pio/libdeps/cyd-ili9341/TFT_eSPI/TFT_eSPI.h:973:8: warning: #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available! [-Wcpp]
+       #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+        ^~~~~~~
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/IPv6Address.cpp.o
+Archiving .pio/build/cyd-ili9341/lib486/libSPIFFS.a
+Indexing .pio/build/cyd-ili9341/lib486/libSPIFFS.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/MD5Builder.cpp.o
+Archiving .pio/build/cyd-ili9341/lib598/libFS.a
+Indexing .pio/build/cyd-ili9341/lib598/libFS.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/Print.cpp.o
+Archiving .pio/build/cyd-ili9341/lib574/libLittleFS.a
+Indexing .pio/build/cyd-ili9341/lib574/libLittleFS.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/Stream.cpp.o
+Archiving .pio/build/cyd-ili9341/lib377/libPreferences.a
+Indexing .pio/build/cyd-ili9341/lib377/libPreferences.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/main.cpp.o
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/stdlib_noniso.c.o
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c: In function 'uartSetPins':
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c:153:9: warning: 'return' with no value, in function returning non-void
+         return;
+         ^~~~~~
+<repo>/build/pio-core/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-uart.c:149:6: note: declared here
+ bool uartSetPins(uint8_t uart_num, int8_t rxPin, int8_t txPin, int8_t ctsPin, int8_t rtsPin)
+      ^~~~~~~~~~~
+Archiving .pio/build/cyd-ili9341/libd78/libTFT_eSPI.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/wiring_pulse.c.o
+Indexing .pio/build/cyd-ili9341/libd78/libTFT_eSPI.a
+Compiling .pio/build/cyd-ili9341/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/cyd-ili9341/libFrameworkArduino.a
+Indexing .pio/build/cyd-ili9341/libFrameworkArduino.a
+Linking .pio/build/cyd-ili9341/firmware.elf
+Retrieving maximum program size .pio/build/cyd-ili9341/firmware.elf
+Checking size .pio/build/cyd-ili9341/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]   7.0% (used 23028 bytes from 327680 bytes)
+Flash: [===       ]  30.4% (used 957525 bytes from 3145728 bytes)
+Building .pio/build/cyd-ili9341/firmware.bin with action:
+  "$PYTHONEXE" "$OBJCOPY" --chip esp32 elf2image --flash_mode ${__get_board_flash_mode(__env__)} --flash_freq ${__get_board_f_flash(__env__)} --flash_size 4MB --elf-sha256-offset 0xb0 -o $TARGET $SOURCES
+Building .pio/build/cyd-ili9341/firmware.bin
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+========================= [SUCCESS] Took 5.22 seconds =========================
+
+Environment    Status    Duration
+-------------  --------  ------------
+cyd-st7789     SUCCESS   00:00:05.184
+cyd-ili9341    SUCCESS   00:00:05.223
+========================= 2 succeeded in 00:00:10.407 =========================

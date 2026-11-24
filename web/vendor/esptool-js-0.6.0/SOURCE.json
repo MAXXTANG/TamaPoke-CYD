@@ -1,0 +1,11 @@
+{
+  "name": "esptool-js",
+  "version": "0.6.0",
+  "source": "https://registry.npmjs.org/esptool-js/-/esptool-js-0.6.0.tgz",
+  "npm_integrity": "sha512-ZyuSBXvmS+4DRKM6GrDHfCscnq3YSNlRfM+Zw0DoS7uC3SdkyC262s/ji4MjDYVmMH8SE2BiYx3/dZ1J23Xiew==",
+  "files": {
+    "bundle.js": "7c361337d5bba7271cb0d9741f165a3b87137ff9284c13f112a6e197c48cd0da",
+    "LICENSE": "1c25f29242785d63e9adb0be7fdc137551dfbbc0756b622fcd26d9cd7de3a4f3",
+    "package.json": "e38e3797f70250046eeca0be3808200f82929fd1723f097ec4369a864f172daa"
+  }
+}
