@@ -28,4 +28,14 @@ python3 -m http.server 8765 --directory web
 
 Node 測試使用隔離假的 loader，涵蓋錯晶片／容量、損壞下載、分割表不合、同意閘門、app 寫入偏移、禁止整片清除、存檔不符、記憶體中待寫映像被改動，以及 UTC 校時與未知韌體攔截。瀏覽器 UI 與實體板子的結果分開記錄，詳見 `evidence/web-validation.json`。
 
+本輪 9 項 Node 測試及 9 項瀏覽器檢查通過，涵蓋 1280／390／320 像素排版、正式函式庫與 CSP 載入、模擬安裝／保留更新、錯晶片、取消選埠、分割表不合與不支援瀏覽器。實體瀏覽器寫入尚未執行；既有 0.4.0 的實板刷入與遊戲驗收使用 esptool.py，見 `evidence/cyd/`。
+
+GitHub Pages 部署及遠端主機／兩款韌體編譯均通過。正式 HTTPS 網站的兩套 factory、app 與分割表均已讀回比對，記錄見 [publication.json](../evidence/publication.json)。
+
+## 網頁預覽
+
+![桌機版燒錄入口](images/web-desktop.png)
+
+[手機版預覽](images/web-mobile.png)。介面圖像與正式網站使用相同資產；封面為專案插畫。
+
 底層依據 [Espressif esptool-js](https://github.com/espressif/esptool-js/tree/v0.6.0)，網站依據 [GitHub Pages 自訂 workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 部署。

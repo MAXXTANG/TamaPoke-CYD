@@ -4,7 +4,7 @@
 
 把皮卡丘養在 **ESP32-2432S028 CYD 2.8 吋觸控板**上。滿版像素草地、四個照顧圖示、三款小遊戲；USB 供電，**4 MB Flash、無須 PSRAM 或 microSD**。
 
-**[開啟網頁燒錄工具](https://maxxtang.github.io/TamaPoke-CYD/)** · [完整安裝與操作](docs/cyd/README.md) · [驗證紀錄](docs/cyd/VALIDATION.md) · [28 張介面截圖](docs/cyd/screens/overview.png)
+**[開啟網頁燒錄工具](https://maxxtang.github.io/TamaPoke-CYD/)** · [下載韌體備份包](https://github.com/MAXXTANG/TamaPoke-CYD/releases/tag/v0.4.0) · [完整安裝與操作](docs/cyd/README.md) · [驗證紀錄](docs/cyd/VALIDATION.md) · [28 張介面截圖](docs/cyd/screens/overview.png)
 
 目前版本：`0.4.0-cyd`。ST7789 版已實機刷入並確認照顧功能與三款遊戲；ILI9341 版已完成編譯與主機測試，尚未上板。這個 repo 為 CYD 獨立版本，原始微雪版位於 [TamaPoke-Pikachu](https://github.com/MAXXTANG/TamaPoke-Pikachu)。
 

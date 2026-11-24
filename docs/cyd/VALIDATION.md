@@ -92,3 +92,12 @@
 - 使用者實際試玩後回覆「**兩款的畫面與體驗都有改善**」。此項驗收是使用者對兩款畫面與操作體驗的確認；完整計分／獎勵路徑的機器測試另列，不將兩者混用。
 - USB 共觀察 **128.487 秒**，包含兩款遊戲的實際操作；接星星取樣分數最高 5，訓練取樣積分最高 12。heap 全程固定 **331,956 bytes**，最慢完整繪圖 **66.106 ms**。未取樣到結算頁，故不把這份 USB 紀錄當成完整結算或獎勵的實機證據。
 - 詳細狀態見 `evidence/cyd/hardware-0.4.0-2026-11-24.json` 與 `runtime-0.4.0.json`。本輪未重新驗證 ILI9341 實機、斷電、長時間運行或新 factory 完整安裝，也未推送或執行遠端 CI。
+
+## CYD 獨立公開 repo 發佈
+
+上述紀錄保留當次本機開發範圍。後續已將 CYD snapshot 匯出至 [MAXXTANG/TamaPoke-CYD](https://github.com/MAXXTANG/TamaPoke-CYD)，未帶入原 Flash 備份、私人設定或原 Git 歷史；來源提交見 `docs/SOURCE_SNAPSHOT.json`。
+
+- 新 repo 重跑 182 項、27,884 assertions 及 ASan／UBSan 通過；主畫面 76,800 像素仍一致。
+- 遠端 GitHub Actions 的 host、ST7789、ILI9341 三個 job 均通過，Pages 部署成功；來源與網址見 `evidence/publication.json`。
+- 網站的 9 項 Node 測試與 9 項隔離瀏覽器檢查通過，實體瀏覽器燒錄尚未測試；不將模擬寫入當成硬體驗收。
+- HTTPS 正式頁面、版本資訊及兩版共六個韌體檔案已讀回並核對 SHA-256。
